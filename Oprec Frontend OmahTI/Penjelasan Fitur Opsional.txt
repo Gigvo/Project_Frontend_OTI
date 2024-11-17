@@ -1,0 +1,9 @@
+Pada website ini saya menambahkan fitur opsional yaitu:
+1. Dark mode: Saya menggunakan javascript untuk menambahkan fitur ini dan juga terdapat
+fitur untuk menyimpan mode terakhir kali saat website dibuka. Sehingga jika terakhir
+kali website dibuka mode yang digunakan adalah light mode, maka pada saat website dibuka
+kembali mode akan tetap berada pada light mode dan tidak kembali ke awal yaitu dark mode.
+Fitur menyimpan mode terakhir kali saat website dibuka ini menggunakan localStorage
+pada JavaScript.
+2. Sedikit animasi pada bagian "+3 more" dan "More" pada bagian gambar-gambar. 
+(Note: tombol "More perlu di klik di tengah supaya bisa bekerja")
