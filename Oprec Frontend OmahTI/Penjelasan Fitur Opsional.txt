@@ -5,5 +5,9 @@ kali website dibuka mode yang digunakan adalah light mode, maka pada saat websit
 kembali mode akan tetap berada pada light mode dan tidak kembali ke awal yaitu dark mode.
 Fitur menyimpan mode terakhir kali saat website dibuka ini menggunakan localStorage
 pada JavaScript.
-2. Sedikit animasi pada bagian "+3 more" dan "More" pada bagian gambar-gambar. 
-(Note: tombol "More perlu di klik di tengah supaya bisa bekerja")
+2. Animasi: Animasi ditambahkan pada beberapa button dan juga link
+3. Penambahan Halaman Lain: Terdapat tambahan halaman sign in dan juga sign up.
+Halaman sign in akan terbuka jika tombol 'Sign In' ditekan dan sign up akan
+terbuka jika tombol 'Sign Up' ditekan
+
+(Note: pada bagian tombol 'More' dibawah gambar-gambar perlu dipencet pada bagian teks untuk bekerja)
