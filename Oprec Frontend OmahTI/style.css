@@ -37,8 +37,26 @@ body {
     margin-top: 6px;
     text-decoration: none;
     color: gray;
+    
 }
-
+#a {
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 0px;
+}
+#a:after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    background-color: gray;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+#a:hover:after {
+    width: 100%;
+}
 .navleft a {
     text-decoration: none;
     color: gray;
@@ -69,17 +87,48 @@ body {
     border: none;
     padding: 0;
     align-items: center;
+    cursor: pointer;
 }
 #lightdarkmode img {
     width: 26px;
     top: 24px;
 }
+
+#lightdarkmode img::before {
+    content: "";
+    position: absolute;
+}
+#lightdarkmode img:hover {
+    background-color: var(--text-color);
+    border-radius: 50%;
+    padding: 4px;
+}
 #leftbutnav {
     background-color: black;
     color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#leftbutnav:before {
+    content: "";
+    position: absolute;
+}
+#leftbutnav:hover {
+    background-color: white;
+    color: black;
 }
 #rightbutnav {
     background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#rightbutnav:before {
+    content: "";
+    position: absolute;
+}
+#rightbutnav:hover {
+    background-color: black;
+    color: white;
 }
 .title {
     color: var(--text-color);
@@ -112,10 +161,31 @@ body {
 }
 #leftbut {
     background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#leftbut:before {
+    content: "";
+    position: absolute;
+}
+#leftbut:hover {
+    background-color: black;
+    color: white;
 }
 #rightbut {
     background-color: black;
     color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#rightbut:before {
+    content: "";
+    position: absolute;
+}
+#rightbut:hover {
+    background-color: white;
+    color: black;
 }
 button {
     font-family: "Inter", sans-serif;
@@ -304,6 +374,7 @@ button {
     color: black;
     align-items: center;
     justify-content: space-between;
+    transition: 0.3s;
 }
 .more {
     border: 0;
@@ -313,13 +384,16 @@ button {
     color: black;
     font-size: 16px;
     text-align: center;
+    
 }
 .button_expand img{
     width: 19px;
     height: 19px;
     margin-left: auto;
     margin-right: 0;
+    
 }
+
 .imgexpand_content-wrap {
     display: grid;
     grid-template-rows: 0fr;
@@ -385,9 +459,30 @@ button {
 .bottext_butright {
     background-color: black;
     color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.bottext_butright:before {
+    content: "";
+    position: absolute;
+}
+.bottext_butright:hover {
+    background-color: white;
+    color: black;
 }
 .bottext_butleft {
     background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.bottext_butleft:before {
+    content: "";
+    position: absolute;
+}
+.bottext_butleft:hover {
+    background-color: black;
+    color: white;
 }
 footer {
     display: flex;
@@ -401,9 +496,23 @@ footer {
 }
 .leftfoot p, .rightfoot p{
     margin-top: 20px;
+    cursor: pointer;
 }
 #gray {
     color: gray;
+}
+#gray:after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+#gray:hover:after {
+    width: 100%;
 }
 #foot{
     margin-right: 88px;
